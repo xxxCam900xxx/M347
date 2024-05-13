@@ -1,0 +1,8 @@
+# Neustes Mariadb Image verwenden
+FROM mariadb:latest
+
+# Definiert variabel um Root Passwort festzulegen
+ENV MARIADB_ROOT_PASSWORD="123" 
+
+# Standartport für Mariadb
+EXPOSE 3306 

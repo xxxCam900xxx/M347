@@ -1,0 +1,12 @@
+# Legt fest das Apache als Webserver verwendet wird
+FROM php:8.0-apache 
+ 
+# installiert mysqli
+RUN docker-php-ext-install mysqli 
+# Kopiert info.php in /var/www/html/ rein
+COPY info.php /var/www/html/ 
+# kopiert db.php in /var/www/html/ rein
+COPY db.php /var/www/html/ 
+
+# unnötig, weil Apache standardmässig auf 80 läuft
+EXPOSE 8080 
