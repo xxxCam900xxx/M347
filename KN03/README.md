@@ -121,11 +121,11 @@ Der Unterschied besteht darin, dass die Container mit dem Standard-Bridge-Netzwe
 ---
 
 ### Betrachten Sie nun KN02
-In KN02, the containers in the same gateway could not communicate via the container name but with the (--link), the name is linked with the IP address, which enables the container to communicate.
+In KN02 konnten die Container im gleichen Gateway nicht über den Containernamen kommunizieren, aber mit (--link) wird der Name mit der IP-Adresse verknüpft, was die Kommunikation der Container ermöglicht.
 
 #### In welchem Netzwerk befanden sich die beiden Container?
-    - busybox1: bridge
-    - busybox3: tbz
+    - busybox1: tbz
+    - busybox3: bridge
 
 #### Wieso konnten die miteinander reden?
-The two containers that were located in the "tbz" network could talk to each other via their names or IP addresses because they were in the same network segment (subnet). Communication between containers in the same network is enabled by default and does not require any special configurations.
+Die beiden Container, die sich im „tbz“-Netz befanden, konnten über ihre Namen oder IP-Adressen miteinander kommunizieren, da sie sich im selben Netzsegment (Subnetz) befanden. Die Kommunikation zwischen Containern im gleichen Netzwerk ist standardmäßig aktiviert und erfordert keine besonderen Konfigurationen.
