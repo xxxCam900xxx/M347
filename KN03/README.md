@@ -118,6 +118,8 @@ Beide Netze, das Standard-Bridge-Netz und das benutzerdefinierte "tbz"-Netz, erm
 **Unterschiede:**
 Der Unterschied besteht darin, dass die Container mit dem Standard-Bridge-Netzwerk nur teilweise verbunden sind, nämlich nur über die IP-Adresse, die sich im Laufe der Zeit ändern kann. Wenn ich jedoch mein eigenes Netzwerk erstelle, kann ich Containernamen verwenden, die sich im Laufe der Zeit nicht ändern.
 
+Da sich die beiden Container nicht im selben Subnetz befinden, können sie nicht miteinander kommunizieren. Die Container 3 & 4 im Bridge (default) Network befinden, haben sie keinen DNS-Eintrag für ihren Namen. Im custom Subnetz ist dies jedoch gewährleistet.
+
 ---
 
 ### Betrachten Sie nun KN02
