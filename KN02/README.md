@@ -4,7 +4,7 @@
 
 # A) Dockerfile I
 
-[dockerfile](/KN02/Content/dockerfile)
+[dockerfile](/KN02/Content/A/dockerfile)
 ```dockerfile
 # Verwenden des offiziellen Nginx-Images als Basis
 FROM nginx
@@ -27,16 +27,17 @@ EXPOSE 80`
  docker run -p 8888:80 cameronmeile/m347:kn02a
 ``` 
 
-![](/KN02/Content/Port8888.png)
-![](/KN02/Content/ImagePort8888.png)
+![](/KN02/Content/Cameron/1-ImagePort8888.png)
+![](/KN02/Content/Cameron/2-Port8888.png)
 
 
 # B) Dockerfile II
 
 ### Telnet Befehl
-![](/KN02/Content/Telnet.png)
+![](/KN02/Content/Cameron/3-Telnet.png)
 
 ### DB - Dockerfile
+[dockerfile](/KN02/Content/B/DB/dockerfile)
 ```dockerfile
 # Neustes Mariadb Image verwenden
 FROM mariadb:latest 
@@ -53,7 +54,7 @@ docker build -t kn02b-db .
 docker run -d -p 3306:3306 --name kn02b_db kn02b-db
 ```
 
-![](/KN02/Content/dbinfo.png)
+![](/KN02/Content/Cameron/4-dbinfo.png)
 
 ### WEB - Dockerfile
 ```dockerfile
@@ -76,8 +77,8 @@ docker build -t kn02b-web .
 docker run -d -p 80:80 --name kn02b_web --link kn02b_db kn02b-web
 ```
 
-![](/KN02/Content/phpinfo.png)
+![](/KN02/Content/Cameron/5-phpinfo.png)
 
 ### Angepasste php files
-[db.php](/KN02/Content/WEB/db.php)
-[info.php](/KN02/Content/WEB/info.php)
+[db.php](/KN02/Content/B/WEB/db.php)
+[info.php](/KN02/Content/B/WEB/info.php)
