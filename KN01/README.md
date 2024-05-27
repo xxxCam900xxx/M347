@@ -3,8 +3,8 @@
 
 # A)
 
-![](/KN01/Content/DockerWebsite.png)
-![](/KN01/Content/DockerWebsite.png)
+![](/KN01/Content/Cameron/1-DockerWebsite.png)
+![](/KN01/Content/Cameron/2-DockerContainer.png)
 
 # B)
 
@@ -22,8 +22,8 @@
 	- **docker create -p 8081:80 --name mynginx nginx**
 	- **docker start mynginx**
   **http://localhost:8081**
-    ![](/KN01/Content/Ngnix.png)
-    ![](/KN01/Content/DockerMyNginx.png)
+    ![](/KN01/Content/Cameron/3-Ngnix.png)
+    ![](/KN01/Content/Cameron/4-DockerMyNginx.png)
 1. Ubuntu Image
 	- **docker run -d ubuntu**
 Docker sucht das Image. Wenn das Image nicht gefunden wird, wird er auch nicht gestartet. Der Docker wird dann nicht ausgeführt. Mit dem Befehl **"Docker ps"** kann man den Status vom docker anschauen.
@@ -35,7 +35,7 @@ Mit dem **"-it"** Befehl öffnet man direkt das interactive terminal. Das intera
 2. status der docker
 	- **docker ps -a**
   
-    ![](/KN01/Content/DockerStatus.png)
+    ![](/KN01/Content/Cameron/5-DockerStatus.png)
 3. NGINX stoppen
 	- **docker stop mynginx**
 4. Docker löschen
@@ -47,7 +47,7 @@ Mit dem **"-it"** Befehl öffnet man direkt das interactive terminal. Das intera
 	- **docker rmi nginx ubuntu**
  
 # C)
-![](/KN01/Content/DockerRepoCame.png)
+![](/KN01/Content/Cameron/6-DockerRepoCame.png)
 
 # D)
 1. Nginx Herunterladen
@@ -62,5 +62,5 @@ Mit dem **"-it"** Befehl öffnet man direkt das interactive terminal. Das intera
 	- **docker push cameronmeile/m347:nginx**
 	- **docker push cameronmeile/m347:mariadb**
 
-![](/KN01/Content/DockerTags.png)
-![](/KN01/Content/DockerHubTags.png)
+![](/KN01/Content/Cameron/7-DockerTags.png)
+![](/KN01/Content/Cameron/8-DockerHubTags.png)
