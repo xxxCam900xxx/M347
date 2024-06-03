@@ -68,9 +68,15 @@ Dieser Fehler tritt auf, weil die Seite auf die Datenbank zugreift, aber die Kon
 
 # B) Docker Compose: Cloud (40%)
 
+```bash
+ssh-keygen -y -f private_key.pem > public_key.pub
+```
+
 1. Screenshots der aufgerufenen Seiten, inkl. sichtbarer URLs. Bei info.php sollen wieder die IPs sichtbar sein!
 
-
+![](./Content/Cameron/7%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/8%20-%20Cameron%20Meile.png)
 
 2. Cloud-Init Datei, die ja alle anderen Dateien enthalten sollte
 
+[docker-cloud-init.yaml](./Content/B/docker-cloud-init.yaml)
