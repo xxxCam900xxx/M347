@@ -31,13 +31,13 @@ write_files:
     permissions: "0644"
     content: |
       <?php
-        $servername = getenv('DB_HOST');
-        $username = getenv('DB_USER');
-        $password = getenv('DB_PASSWORD');
-        $dbname = getenv('DB_NAME');
+        $servername = "m347-kn04b-db";
+        $username = "root";
+        $password = "123";
+        $dbname = "test";
 
         // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($servername, $username, $password);//, $dbname);
 
         // Check connection
         if ($conn->connect_error) {
