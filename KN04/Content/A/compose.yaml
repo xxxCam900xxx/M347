@@ -1,38 +1,36 @@
-version: '3.8'
+version: "3.8"
 
 services:
+  db:
+    image: mariadb:latest
+    container_name: m347-kn04a-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+    ports:
+      - 3306:3306
+    networks:
+      - m347-kn04a-network
+
   web:
     container_name: m347-kn04a-web
-    image: php:8.0-apache
-    ports:
-      - "80:80"
-    volumes:
-      - ./src/:/var/www/html
-    networks:
-      my_network:
-        ipv4_address: 172.10.5.10
+    build:
+      context: .
+      dockerfile: dockerfile
+    restart: always
     depends_on:
       - db
-    command: bash -c "docker-php-ext-install mysqli && apache2-foreground"
-
-  db:
-    container_name: m347-kn04a-db
-    image: mariadb:latest
-    environment:
-      - MARIADB_ROOT_PASSWORD=123
-      - MARIADB_DATABASE=test
     ports:
-      - "3306:3306"
+      - 8080:80
     networks:
-      my_network:
-        ipv4_address: 172.10.5.11
+      - m347-kn04a-network
 
 networks:
-  my_network:
+  m347-kn04a-network:
     driver: bridge
     ipam:
+      driver: default
       config:
         - subnet: 172.10.0.0/16
           ip_range: 172.10.5.0/24
           gateway: 172.10.5.254
- 
