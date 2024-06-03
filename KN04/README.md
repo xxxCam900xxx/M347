@@ -18,11 +18,11 @@
 
 3. Docker-Compose File (yaml-Datei)
 
-[docker-compose.yml](./Content/Cameron/Task_A/docker-compose.yml)
+[docker-compose.yml]()
 
 4. Dockerfile für Webserver
 
-[Dockerfile](./Content/Cameron/Task_A/Dockerfile)
+[Dockerfile]()
 
 5. Liste der Befehle, die docker compose up ausführt und deren Erklärungen
 
@@ -39,7 +39,7 @@
 
 2. Docker Compose Datei (yaml)
 
-[](./Content/Cameron/Task_A/docker-compose.yml)
+[]()
 
 3. Erklärung wieso der Fehler auftritt
 
