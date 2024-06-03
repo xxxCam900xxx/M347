@@ -108,4 +108,4 @@ runcmd:
   - systemctl enable docker
   - systemctl start docker
   - cd /home/ubuntu
-  - sudo docker compose up -d#cloud-config
+  - sudo docker compose up -d #cloud-config
