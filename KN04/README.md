@@ -14,8 +14,8 @@ docker compose up -d
 
 1. Screenshot der Seite info.php. Scrollen Sie dabei zuerst runter bis die Felder REMOTE_ADDR und SERVER_ADDR sichtbar sind
 
-![](./Content/Cameron/01%20-%20Cameron%20Meile.png)
-![](./Content/Cameron/02%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/1%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/2%20-%20Cameron%20Meile.png)
 
 2. Screenshot der Seite db.php. Sie zeigen, dass beide Images im gleichen Netzwerk sind.
 
@@ -25,8 +25,8 @@ docker network ls
 docker inspect a_m347-kn04a-network
 ```
 
-![](./Content/Cameron/03%20-%20Cameron%20Meile.png)
-![](./Content/Cameron/04%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/3%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/4%20-%20Cameron%20Meile.png)
 
 3. Docker-Compose File (yaml-Datei)
 
@@ -53,8 +53,8 @@ docker push cameronmeile/m347:kn02b
 
 1. Screenshots der beiden Seiten
 
-![](./Content/Cameron/01b%20-%20Cameron%20Meile.png)
-![](./Content/Cameron/02b%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/5%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/6%20-%20Cameron%20Meile.png)
 
 2. Docker Compose Datei (yaml)
 
