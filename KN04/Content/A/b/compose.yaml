@@ -14,7 +14,7 @@ services:
       - m347-kn04b-network
 
   web:
-    image: cameronmeile/m347:kn02a
+    image: cameronmeile/m347:kn02b
     # image: cameronmeile/m347:mariadb
     container_name: m347-kn04b-web
     build:

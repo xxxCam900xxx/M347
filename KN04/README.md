@@ -45,10 +45,16 @@ docker inspect a_m347-kn04a-network
 
 ### Teil b) Verwendung Ihrer eigenen Images
 
+```bash
+docker tag kn02b cameronmeile/m347:kn02b
+docker build -t cameronmeile/m347:kn02b .
+docker push cameronmeile/m347:kn02b
+```
+
 1. Screenshots der beiden Seiten
 
-![]()
-![]()
+![](./Content/Cameron/01b%20-%20Cameron%20Meile.png)
+![](./Content/Cameron/02b%20-%20Cameron%20Meile.png)
 
 2. Docker Compose Datei (yaml)
 
