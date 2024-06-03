@@ -2,8 +2,8 @@ version: "3.8"
 
 services:
   db:
-    image: cameronmeile/m347:mariadb
-    # image: cameronmeile/m347:mariadb
+    #image: cameronmeile/m347:mariadb
+    image:  nonmediabutinformatics/m347:mariadb
     container_name: m347-kn04b-db
     restart: always
     environment:
@@ -14,8 +14,8 @@ services:
       - m347-kn04b-network
 
   web:
-    image: cameronmeile/m347:kn02b
-    # image: cameronmeile/m347:mariadb
+    #image: cameronmeile/m347:kn02b
+    image:  nonmediabutinformatics/m347:kn02b
     container_name: m347-kn04b-web
     build:
       context: ./src/
