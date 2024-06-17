@@ -15,7 +15,7 @@ Estellt und betreibt einen Docker-Container mit nginx-Image und bind mount:
 
 Zugriff auf die Container-Shell über das Terminal und start von output.sh:
 
-``` docker exec -it 4520f9995593 bash /usr/share/nginx/html/kn05a/output.sh```
+``` docker exec -it kn05a bash /usr/share/nginx/html/kn05a/output.sh```
 
 ![](./Content/Jan/1-container.png)
 ![](./Content/Jan/2-output.png)
