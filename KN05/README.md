@@ -30,12 +30,30 @@ Zugriff auf die Container-Shell über das Terminal und start von output.sh:
 
 1. Liste der Befehle die notwendig waren, um Container mit Volumen zu starten.
 
+Volumen erstellen:
+``` docker volume create kn05-b_shared_volume ```
 
+![](./Content/Cameron/04Cameron.png)
+
+Erstellung von zwei Containern:
+``` docker run -d --name kn05b-container-1 --mount source=kn05-b_shared_volume,target=/shared nginx ```
+``` docker run -d --name kn05b-container-2 --mount source=kn05-b_shared_volume,target=/shared nginx ```
+
+![](./Content/Cameron/05Cameron.png)
+
+Die Konsole des ersten Containers wird geöffnet, um eine .txt-Datei zu erstellen und einige Inhalte in die Shared File zu schreiben.
+``` docker exec -it kn05b-container-1 /bin/bash ```
+``` echo "Content from container1" >> /shared/shared_file.txt ```
+
+Die Konsole des zweiten Containers wird geöffnet, um den Inhalt der gleichen Datei zu lesen.
+``` docker exec -it kn05b-container-2 /bin/bash ```
+``` cat /shared/shared_file.txt ```
+
+![](./Content/Cameron/06Cameron.png)
 
 2. Erstellen Sie einen Screencast, der den beschriebenen Prozess zeigt. Testen Sie Ihn aber erst, bevor Sie den Screencast erstellen (Link in Grundlagen-Teil).
 
-
-
+No Screen Cast (Personaly Shown)
 
 # C) Speicher mit docker compose (30%)
 
