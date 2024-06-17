@@ -6,12 +6,12 @@ services:
     container_name: kn05c-con-1
     volumes:
       - type: volume
-        # source: jan-volume
-        source: came-volume
+        source: jan-volume
+        # source: came-volume
         target: "/var/www/html/"
       - type: bind
-        # source: "D:/01-Backup/01-LP01WIN10JS/05-Tbz/01-Module/E-Portfolio-TBZ/M347/KN05/Content/C"
-        source: "C:/Users/came/OneDrive - TBZ/Desktop/M347/M347/KN05/Content/C"
+        source: "D:/01-Backup/01-LP01WIN10JS/05-Tbz/01-Module/E-Portfolio-TBZ/M347/KN05/Content/C"
+        # source: "C:/Users/came/OneDrive - TBZ/Desktop/M347/M347/KN05/Content/C"
         target: /usr/share/nginx/html
       - type: tmpfs
         target: "/random-dir"
@@ -21,10 +21,10 @@ services:
     image: nginx:latest
     container_name: kn05c-con-2
     volumes:
-      # - jan-volume:/usr/share/nginx/html:rw
-      - came-volume:/usr/share/nginx/html:rw
+      - jan-volume:/usr/share/nginx/html:rw
+      # - came-volume:/usr/share/nginx/html:rw
     ports:
       - "2200:80"
 volumes:
-  # jan-volume: {}
-  came-volume: {}
+  jan-volume: {}
+  # came-volume: {}
