@@ -11,6 +11,7 @@
 Estellt und betreibt einen Docker-Container mit nginx-Image und bind mount:
 
 ``` docker run --name kn05a -p 8080:80 -v D:/01-Backup/01-LP01WIN10JS/05-Tbz/01-Module/E-Portfolio-TBZ/M347/KN05/Content/Jan/:/usr/share/nginx/html/kn05a -d nginx ```
+``` docker run --name kn05a -p 8080:80 -v C:/GitHubRepositories/m347/KN05-Arbeit_mit_Speicher/KN05a/:/usr/share/nginx/html/kn05a -d nginx ```
 
 Zugriff auf die Container-Shell über das Terminal und start von output.sh:
 
@@ -22,7 +23,7 @@ Zugriff auf die Container-Shell über das Terminal und start von output.sh:
 
 2. Erstellen Sie einen Screencast, der den beschriebenen Prozess zeigt. Testen Sie Ihn aber erst, bevor Sie den Screencast erstellen (Link in Grundlagen-Teil).
 
-
+[Came Screencast](./Content/Cameron/Windows%20PowerShell%202024-06-17%2015-33-50.mp4)
 
 ---
 
@@ -53,7 +54,7 @@ Die Konsole des zweiten Containers wird geöffnet, um den Inhalt der gleichen Da
 
 2. Erstellen Sie einen Screencast, der den beschriebenen Prozess zeigt. Testen Sie Ihn aber erst, bevor Sie den Screencast erstellen (Link in Grundlagen-Teil).
 
-No Screen Cast (Personaly Shown)
+[Came Video](./Content/Cameron/Windows%20PowerShell%202024-06-17%2015-39-02.mp4)
 
 # C) Speicher mit docker compose (30%)
 
