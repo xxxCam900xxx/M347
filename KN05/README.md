@@ -58,11 +58,13 @@ No Screen Cast (Personaly Shown)
 # C) Speicher mit docker compose (30%)
 
 1. Auszug mit dem Befehl mount im ersten Container, der zeigt, dass alle drei Speichertypen hinzugefügt wurden.
+![](./Content/Jan/5-container1.png)
 
 
 
 2. Auszug mit dem Befehl mount im zweiten Container, der zeigt, dass der Speichertyp hinzugefügt wurde.
-
+![](./Content/Jan/6-container2.png)
 
 
 3. docker compose Datei (yaml).
+[docker-compose.yaml](./Content/C/docker-compose.yaml)

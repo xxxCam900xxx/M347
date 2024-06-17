@@ -1,0 +1,26 @@
+version: '3.8'
+name: kn05-compose
+services:
+  container-1:
+    image: nginx:latest
+    container_name: kn05c-con-1
+    volumes:
+      - type: volume
+        source: jan-volume
+        target: "/var/www/html/"
+      - type: bind
+        source: "D:/01-Backup/01-LP01WIN10JS/05-Tbz/01-Module/E-Portfolio-TBZ/M347/KN05/Content/C"
+        target: /usr/share/nginx/html
+      - type: tmpfs
+        target: "/random-dir"
+    ports:
+      - "2100:80"
+  container-2:
+    image: nginx:latest
+    container_name: kn05c-con-2
+    volumes:
+      - jan-volume:/usr/share/nginx/html:rw
+    ports:
+      - "2200:80"
+volumes:
+  jan-volume: {}
