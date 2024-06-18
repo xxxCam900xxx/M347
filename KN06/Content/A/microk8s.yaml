@@ -1,0 +1,29 @@
+#cloud-config
+# source: https://thenewstack.io/deploy-a-kubernetes-cluster-on-ubuntu-server-with-microk8s/
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin, microk8s
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUBo+qnNu5xxM9vfz4C04M36FHxHNrEMdm5TkFj1/SfVtqunlUOeMpu7nFCZZKnX8HYwf/MkjcBiTYAgncxku8grwl6XuW/pcvmb6/ghSIaw4xtRRSzit7omqJ5d8kXB3+Nd1aaMHsjfly4nkaqswhySVXQqr8Hw6DbWVw8jLLVKEE+5NZHY33hJkhJwK4blCllsGpmQaKi1qxjsN0hZOWNK01iJAydwD8t2xJ0NOYbq8Qas5IyPnRN7SPxvEhIP6WLQ6Ym6Dmf8FwNW1cHLTKabgjzt5f/HKUkKS89dPd3fn4nnFli1BOMECGUIvVlOw2pQNri7+04OOfn2FGlqr5 teacher
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcbO03gnkkKf1FlX90wK4ZoTDVdtSJCGtYpoan2K6e1cbyffGC6MfmNPgVp7w2jMSRbxm/AmsRmMhcOAozFEM/u47opZ7hAUivuJHbavlerx2uZU1VcYZ0eFWf+tRKz0lVH++tstSqTAvbCK67s0dIl/W0gnPmO3Vy0UMf9ChF++kdoVblRbEifiSVn2upPGI4NlGAnI2A8C9Z4mpxdC1l2BNasfI15UwMe+Xfr5U85g1WhBjmlCzX6RLUFlppaLaz/Etz+Bfj+tsBm9RJMOKyGfXFryqALb5SrcRSTM9i2LZcmlxAt6idvcREwTsJNnolUQOoKDyutCnb38fAwqcH aws-key # jan
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCG2WoVItWy/mWwDsRlWHRfsR1XKTXdnS44RRg+pdM0OEX2OmbiqxDZKPEUJ9w/2O/y7l/RyZ8JKm4FuJ6+R6vVWJ80XmY67OEj48zR2O9XxK64M9uoI+cQA7yz/FK5twjpplz8BUnYh4AnYWJuhQKItXYcrqBzfkF6eROHjBB6ha52bE87dbNXuz77mc/ILjqEW18Z/2DXtluH4cbFOQ9itgLi8b4n2bybTVpIMQPF1ei5oWGxqYGTq6VVxfLqY7/C05VvDpkoFlZz4DJu2pASU+1gklDThqAd1+3n/ge9gOK2YYXxzjfeM50BJobU5stKZW1V6EAC6rfGR3ecO5JL aws-key # cameron
+      - # fügen Sie Ihren Schlüssel hinzu!
+groups:
+  - microk8s
+system_info:
+  default_user:
+    groups: [microk8s]
+ssh_pwauth: false
+disable_root: false
+package_update: true
+package_upgrade: true
+packages:
+  - curl
+runcmd:
+  - sudo snap install microk8s --classic
+  - mkdir /home/ubuntu/.kube
+  
+  
