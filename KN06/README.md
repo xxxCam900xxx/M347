@@ -4,7 +4,7 @@
 
 1. Rufen Sie den Befehl microk8s kubectl get nodes auf einem der Nodes auf und zeigen Sie mit einem Screenshot, dass alle drei Nodes hinzugefügt wurden
 
-
+![](./Content/Cameron/01%20Cameron.png)
 
 ### B) Verständnis für Cluster (50%)
 
