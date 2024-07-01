@@ -38,7 +38,7 @@ Die erste Zeile microK8s is running zeigt an, dass der MicroK8s-Dienst auf dem a
 ```bash
 microk8s leave
 
- microk8s.remove-node <node-name>
+microk8s.remove-node <node-name>
 ```
 
 Node1:
