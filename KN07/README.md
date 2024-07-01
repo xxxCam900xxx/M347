@@ -26,19 +26,42 @@
 
 #### Command Lines
 
+Escape Vim FIle
+`esc -> : -> w -> q`
+
 ```bash
 
-microk8s kubectl apply -f mongo-config.yaml
-microk8s kubectl apply -f mongo-secret.yaml
+touch configmap.yaml
+vim configmap.yaml
+
+touch secret.yaml
+vim secret.yaml
+
+touch db.yaml
+vim db.yaml
+
+touch web.yaml
+vim web.yaml
+
+microk8s kubectl get pods
+microk8s kubectl apply -f configmap.yaml
+microk8s kubectl apply -f secret.yaml
 microk8s kubectl apply -f db.yaml
 microk8s kubectl apply -f web.yaml
-kubectl get all
+microk8s kubectl get all
 
 ```
 
 #### Files
 
-- [mongo-config.yaml]()
-- [mongo-secret.yaml]()
-- [db.yaml]()
-- [web.yaml]()
+- [configmap.yaml](./Content/B/configmap.yaml)
+- [secret.yaml](./Content/B/secret.yamlyaml)
+- [db.yaml](./Content/B/mongodb.yaml)
+- [web.yaml](./Content/B/webapp.yaml)
+
+![](./Content/Cameron/02%20Cameron.png)
+![](./Content/Cameron/03%20Cameron.png)
+![](./Content/Cameron/04Cameron.png)
+![](./Content/Cameron/05Cameron.png)
+![](./Content/Cameron/06Cameron.png)
+![](./Content/Cameron/07Cameron.png)
