@@ -31,6 +31,8 @@ Escape Vim FIle
 
 ```bash
 
+mkdir projektdemo
+
 sudo snap -i kubectl --classic
 
 touch configmap.yaml
