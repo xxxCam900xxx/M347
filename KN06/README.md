@@ -29,7 +29,7 @@ Node 3:
 #### Rufen Sie den Befehl microk8s status auf und schauen Sie die ersten paar Zeilen an (vor "addons"). Was bedeuten diese?
 
 ![](./Content/Cameron/KNB05%20Cameron%20node2%20Status.png)
-![](./Content/Cameron/KNB05%20Cameron%20node3%20Status.png)
+![](./Content/Cameron/Cameron%20Standybynone.png)
 
 Die erste Zeile microK8s is running zeigt an, dass der MicroK8s-Dienst auf dem aktuellen Knoten läuft, die Zeile high-availability: yes zeigt an, dass der MicroK8s-Cluster für Hochverfügbarkeit konfiguriert ist (gewährleistet Redundanz und Ausfallsicherheit durch Aufrechterhaltung eines konsistenten und synchronisierten Datenspeichers über mehrere Knoten). datastore master nodes: 172.31.96.100:19001 172.31.96.110:19001 172.31.96.120:19001 Dieser Abschnitt listet die IP-Adressen und Ports der mit dem Master-Knoten verbundenen Knoten auf. datastore standby nodes: none Zeile zeigt an, dass keine Standby-Knoten verfügbar sind. Bei Standby-Knoten handelt es sich in der Regel um Replikate von Master-Knoten, die im Falle eines Ausfalls die Datenintegrität und -verfügbarkeit aufrechterhalten können.
 
