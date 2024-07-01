@@ -31,6 +31,8 @@ Escape Vim FIle
 
 ```bash
 
+sudo snap -i kubectl --classic
+
 touch configmap.yaml
 vim configmap.yaml
 
