@@ -122,5 +122,7 @@ Node 1:
 - Screenshot (von einem Node) mit der funktionierenden Webseite
 - Screenshot des Befehls microk8s kubectl describe service webapp-service
 
+![]()
+
 - open the port 32000
 - With the command nano web.yaml the changes to the yaml file could be implemnted.
