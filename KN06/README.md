@@ -1,5 +1,9 @@
 # KN06
 
+```bash
+microk8s.add-node
+```
+
 ### A) Installation (50%)
 
 1. Rufen Sie den Befehl microk8s kubectl get nodes auf einem der Nodes auf und zeigen Sie mit einem Screenshot, dass alle drei Nodes hinzugefügt wurden
